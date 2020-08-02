@@ -3,12 +3,14 @@
         "name": "nikita babko",
         "email": "niki.babko@gmail.com"
     },
+    "homepage": "https://whiterabbit1966.github.io/landing-page___mogo___-HARD-",
     "name": "mogo",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "gh-pages -d build"
     },
     "license": "ISC",
     "devDependencies": {
