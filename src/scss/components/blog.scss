@@ -1,0 +1,69 @@
+.blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 115px;
+
+    &__img {
+        position: relative;
+    }
+
+    &__date {
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        z-index: 0;
+        padding: 15px;
+        text-align: center;
+        background: #95e1d3;
+        font-weight: 700;
+        font-size: 29px;
+        color: #fff;
+
+        &-mon {
+            padding-top: 5px;
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+
+    &__info {
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    &__title {
+        margin: 20px 0;
+        font-family: "Montserrat Bold";
+        font-size: 14px;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 345px;
+        font-family: "Roboto Regular";
+        font-size: 15px;
+        color: #999;
+        line-height: 1.6;
+    }
+
+    &-stat {
+        display: flex;
+        margin-top: 19px;
+
+        .fas {
+            margin-right: 7px;
+            color: #95e1d3;
+        }
+
+        &__item {
+            font-family: "Roboto Light Italic";
+            font-size: 15px;
+            color: #999;
+        }
+
+        &__item:last-child {
+            margin-left: 19px;
+        }
+    }
+}

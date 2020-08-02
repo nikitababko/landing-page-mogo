@@ -1,0 +1,105 @@
+@import "../vars";
+
+@media (max-width: $tabletL) {
+    .intro {
+        &__title {
+            font-size: 90px;
+        }
+    }
+}
+
+@media (max-width: $tabletM) {
+    .intro {
+        &__title {
+            font-size: 70px;
+        }
+
+        &-slider__item {
+            &::before {
+                width: 40px;
+            }
+        }
+
+        &-slider__name {
+            font-size: 15px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: $tabletL) {
+    .intro {
+        height: 120vh;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 823px) {
+    .intro {
+        height: 190vh;
+
+        &__inner {
+            padding-top: 120px;
+        }
+    }
+}
+
+@media (max-width: $mobileL) {
+    .intro {
+        &__subtitle {
+            font-size: 50px;
+        }
+
+        &__title {
+            font-size: 50px;
+        }
+
+        &-slider__item {
+            &::before {
+                width: 20px;
+            }
+        }
+
+        &-slider__name {
+            font-size: 12px;
+
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobileM) {
+    .intro {
+        &__inner {
+            padding-top: 100px;
+        }
+
+        &-slider__name {
+            font-size: 12px;
+
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobileS) {
+    .intro {
+        height: 130vh;
+
+        &__inner {
+            padding-top: 150px;
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: 568px) {
+    .intro {
+        height: 220vh;
+    }
+}

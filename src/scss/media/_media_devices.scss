@@ -1,0 +1,28 @@
+@media (max-width: $mobileL) {
+    .devices__img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .devices__img--iphone {
+        right: 20px;
+        bottom: -70px;
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: $mobileS) {
+    .devices__img--iphone {
+        right: -40px;
+        width: 100%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: $tabletM) {
+    .devices__img--iphone {
+        right: -40px;
+        width: 100%;
+        max-width: 200px;
+    }
+}

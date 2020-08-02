@@ -1,0 +1,56 @@
+$fonts-path: "../fonts";
+
+// Montserrat
+@font-face {
+    font-family: "Montserrat Regular";
+    src: local("Montserrat"), local("Montserrat-Regular"),
+        url("#{$fonts-path}/montserrat_regular/montserrat.woff2") format("woff2"),
+        url("#{$fonts-path}/montserrat.woff") format("woff"),
+        url("#{$fonts-path}/montserrat_regular/montserrat.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: local("Montserrat Bold"), local("Montserrat-Bold"),
+        url("#{$fonts-path}/montserrat_bold/montserratbold.woff2") format("woff2"),
+        url("#{$fonts-path}/montserrat_bold/montserratbold.woff") format("woff"),
+        url("#{$fonts-path}/montserrat_bold/montserratbold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Kaushan
+@font-face {
+    font-family: "Kaushan Script";
+    src: local("Kaushan Script"), local("KaushanScript-Regular"),
+        url("#{$fonts-path}/kaushan_script/kaushanscript.woff2") format("woff2"),
+        url("#{$fonts-path}/kaushan_script/kaushanscript.woff") format("woff"),
+        url("#{$fonts-path}/kaushan_script/kaushanscript.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Roboto
+@font-face {
+    font-family: "Roboto Light Italic";
+    src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
+        url("#{$fonts-path}/roboto_light_italic/robotolightitalic.woff2") format("woff2"),
+        url("#{$fonts-path}/roboto_light_italic/robotolightitalic.woff") format("woff"),
+        url("#{$fonts-path}/roboto_light_italic/robotolightitalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("#{$fonts-path}/roboto_regular/roboto.woff2") format("woff2"),
+        url("#{$fonts-path}/roboto_regular/roboto.woff") format("woff"),
+        url("#{$fonts-path}/roboto_regular/roboto.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}

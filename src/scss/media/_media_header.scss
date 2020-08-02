@@ -1,0 +1,104 @@
+@media (max-width: 890px) {
+    .header__nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        transition: opacity 1s linear;
+        box-shadow: 0 10px 10px 10px #e88382;
+
+        animation-name: header_nav;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+        @keyframes header_nav {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            background: #e88382;
+            padding: 40px 0;
+
+            li {
+                margin: 20px 0;
+
+                .header__link {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .header__nav--active {
+        display: block;
+    }
+
+    .container--header {
+        position: relative;
+    }
+
+    .burger-menu {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        padding: 12px 6px;
+        cursor: pointer;
+
+        &__btn {
+            position: relative;
+            width: 40px;
+            height: 3px;
+            background: #fff;
+            transition: background 0.4s linear;
+
+            &::before {
+                position: absolute;
+                top: -13px;
+                display: block;
+                width: 40px;
+                height: 3px;
+                background: #fff;
+                content: "";
+                transition: transform 0.4s linear;
+            }
+
+            &::after {
+                position: absolute;
+                top: 13px;
+                display: block;
+                width: 40px;
+                height: 3px;
+                background: #fff;
+                content: "";
+                transition: transform 0.4s linear;
+            }
+        }
+
+        &__btn--active {
+            background: transparent;
+
+            &::before {
+                transform-origin: 100% 0;
+                transform: rotate(-45deg) translate(-1px, 0px);
+            }
+
+            &::after {
+                transform-origin: 100% 0;
+                transform: rotate(45deg) translate(2px, 1.5px);
+            }
+        }
+    }
+}

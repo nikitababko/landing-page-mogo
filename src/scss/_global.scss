@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Montserrat Regular";
+}
+
+.section {
+    padding-top: 100px;
+}
+
+.container {
+    padding: 0 25px;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.section__header {
+    text-align: center;
+    width: 958px;
+    margin: 0 auto;
+}

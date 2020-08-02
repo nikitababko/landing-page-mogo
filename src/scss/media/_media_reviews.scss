@@ -1,0 +1,51 @@
+@media (max-width: $laptop) {
+    .reviews__content {
+        flex-direction: column;
+    }
+
+    .reviews__img {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: $tabletM) {
+    .reviews__content {
+        flex-direction: column;
+    }
+
+    .reviews__img {
+        margin-bottom: 40px;
+    }
+
+    .reviews__text {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: $mobileL) {
+    .reviews__text {
+        max-width: 200px;
+        font-size: 17px;
+    }
+
+    .prev,
+    .next {
+        top: 190px;
+    }
+}
+
+@media (max-width: $mobileS) {
+    .prev,
+    .next {
+        top: 100px;
+    }
+
+    .prev {
+        left: 0px;
+    }
+
+    .next {
+        right: 0px;
+    }
+}

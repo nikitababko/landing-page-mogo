@@ -1,0 +1,83 @@
+@import "../mixins";
+
+.section-title {
+    @include section_header_title;
+}
+
+.section-subtitle {
+    @include section_header_subtitle;
+}
+
+.section-text {
+    @include section_header_text;
+}
+
+.card {
+    margin-bottom: 105px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__inner {
+    @include cards_inner;
+}
+
+.card__item {
+    @include cards_item;
+}
+
+.card__text {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat Bold";
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0;
+
+    i {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+}
+
+/*======================================================= 
+Statistics
+=======================================================*/
+.statistics {
+    background: #95e1d3;
+}
+
+.statistics__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics__item {
+    flex: 1 1 0;
+    padding: 89px 0;
+    text-align: center;
+    color: #fff;
+    border-left: 1px solid #b5eae0;
+
+    &:first-child {
+        border-left: none;
+    }
+}
+
+.statistics__count {
+    margin-bottom: 30px;
+    font-family: "Montserrat Bold";
+    font-size: 72px;
+}
+
+.statistics__text {
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    text-transform: uppercase;
+}

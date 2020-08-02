@@ -1,0 +1,28 @@
+@media (max-width: $tabletM) {
+    .work__content {
+        flex-wrap: wrap;
+    }
+
+    .work__col {
+        display: flex;
+
+        &:nth-child(3) {
+            width: 50%;
+        }
+
+        &:last-child {
+            flex-wrap: wrap;
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: $mobileS) {
+    .works__title {
+        font-size: 10px;
+    }
+
+    .works__text {
+        font-size: 11px;
+    }
+}

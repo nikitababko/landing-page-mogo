@@ -1,0 +1,80 @@
+@import "./vars";
+
+/*======================================================= 
+Section header
+=======================================================*/
+@mixin section_header_title {
+    margin-bottom: 24px;
+    font: {
+        family: "Kaushan Script";
+        size: 24px;
+    }
+    color: $color-section-header;
+}
+
+@mixin section_header_subtitle {
+    font: {
+        family: "Montserrat Bold";
+        size: 30px;
+    }
+    text-transform: uppercase;
+    color: $color-section-header;
+
+    &::after {
+        display: block;
+        content: "";
+        margin: 41px auto 47px;
+        width: 60px;
+        height: 3px;
+        background: #f38181;
+    }
+}
+
+@mixin section_header_text {
+    margin-bottom: 100px;
+    font: {
+        family: "Roboto Regular";
+        size: 15px;
+    }
+    line-height: 1.6;
+    color: $color-section-text;
+}
+
+/*======================================================= 
+Cards 
+=======================================================*/
+@mixin cards_inner {
+    background: #95e1d3;
+
+    &:hover {
+        .card__item {
+            transform: translate(-10px, -10px);
+
+            .card__text {
+                opacity: 1;
+            }
+
+            img {
+                opacity: 0.1;
+            }
+        }
+    }
+}
+
+@mixin cards_item {
+    position: relative;
+    transition: transform 0.4s linear;
+    background: linear-gradient(
+        0deg,
+        rgba(232, 206, 130, 1) 0%,
+        rgba(228, 129, 125, 1) 100%
+    );
+
+    .card__text {
+        transition: opacity 0.4s linear;
+    }
+
+    img {
+        transition: opacity 0.4s linear;
+    }
+}

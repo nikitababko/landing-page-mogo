@@ -1,0 +1,25 @@
+@media (max-width: 1250px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__inner {
+            margin: 20px 0;
+
+            &:nth-child(odd) {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobileL) {
+    .statistics__inner {
+        flex-direction: column;
+    }
+
+    .statistics__item {
+        border: none;
+    }
+}

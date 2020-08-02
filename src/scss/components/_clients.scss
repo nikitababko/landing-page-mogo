@@ -1,0 +1,61 @@
+@import "../vars";
+
+.section--clients {
+    background: url("../img/clients/clients-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 130px;
+
+    &__item {
+        position: relative;
+        margin: 60px 0 0 40px;
+        width: 46%;
+    }
+
+    &__photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    &__content {
+        margin-left: 140px;
+        width: 380px;
+    }
+
+    &__name {
+        font-family: "Montserrat Regular";
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__prof {
+        font-family: "Roboto Light Italic";
+        font-size: 15px;
+
+        &::after {
+            display: block;
+            content: "";
+            margin: 17px 0 24px;
+            width: 60px;
+            height: 3px;
+            background: #f38181;
+        }
+    }
+
+    &__text {
+        font-family: "Roboto Regular";
+        font-size: 15px;
+        color: $color-section-text;
+        line-height: 1.6;
+    }
+}

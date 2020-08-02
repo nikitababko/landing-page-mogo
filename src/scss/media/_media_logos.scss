@@ -1,0 +1,30 @@
+@media (max-width: $mobileL) {
+    .container--logos {
+        flex-direction: column;
+    }
+
+    .logos__item {
+        margin: 30px 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: $tabletM) {
+    .container--logos {
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logos__item {
+        width: 33.33333%;
+        margin: 30px 0;
+    }
+}

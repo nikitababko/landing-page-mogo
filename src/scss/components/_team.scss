@@ -1,0 +1,55 @@
+@import "../vars";
+
+.team__social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__link {
+    padding: 15px 23px;
+
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+    line-height: 1;
+
+    transition: background 0.4s linear, color 0.4s linear;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:hover {
+        color: #fff;
+        background: #f38181;
+    }
+}
+
+.card__inner--team {
+    position: relative;
+}
+
+.card__info {
+    position: absolute;
+    right: 0;
+    bottom: -78px;
+    left: 0;
+    z-index: 0;
+    text-align: center;
+}
+
+.card__name {
+    margin-bottom: 16px;
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    color: $color-section-header;
+}
+
+.card__prof {
+    font-family: "Roboto Light Italic";
+    font-size: 15px;
+    color: $color-section-text;
+}
