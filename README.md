@@ -4,7 +4,6 @@
 
 ### Where and what is located (files, folders).
 
--   File "mogo.rar" - Layout of the site from which I wrote the code
 -   Folder "src" - project's source
 -   Folder "build" - ready project
 -   File "gulpfile.js" - main config
